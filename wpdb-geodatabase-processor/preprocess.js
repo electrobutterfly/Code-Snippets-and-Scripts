@@ -10,11 +10,11 @@ const __dirname = path.dirname(__filename);
 const config = {
     // Input files - UPDATE THESE PATHS!
     inputFiles: {
-        af: './geodata/wdpa_af.geojson',
-        as: './geodata/wdpa_as.geojson', 
-        eu: './geodata/wdpa_eu.geojson',
-        na: './geodata/wdpa_na.geojson',
-        wa: './geodata/wdpa_wa.geojson'
+        af: './data/raw/wdpa_af.geojson',
+        as: './data/raw/wdpa_as.geojson', 
+        eu: './data/raw/wdpa_eu.geojson',
+        na: './data/raw/wdpa_na.geojson',
+        wa: './data/raw/wdpa_wa.geojson'
     },
     
     // Output settings
