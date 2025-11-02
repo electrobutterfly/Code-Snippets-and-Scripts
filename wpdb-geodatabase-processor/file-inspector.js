@@ -1,4 +1,4 @@
-#
+# file-inspector.js
 # @copyright     (c) 2025 Klaus Simon
 # @license       Custom Attribution-NonCommercial Sale License
 # @description   Part of the wpdb-geodatabase-processor Project.

@@ -21,7 +21,7 @@ const __dirname = path.dirname(__filename);
 
 const config = {
     output: {
-        chunks: './data/processed/chunks/'
+        chunks: './data/chunks/'
     }
 };
 

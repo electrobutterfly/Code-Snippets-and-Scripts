@@ -24,7 +24,7 @@ module.exports = {
     
     // Output settings
     output: {
-        chunks: './data/processed/chunks/',
+        chunks: './data/chunks/',
         tiles: './data/tiles/',
         maxChunkSize: 50000, // 50KB per chunk
         featuresPerChunk: 50 // Adjust based on feature complexity
