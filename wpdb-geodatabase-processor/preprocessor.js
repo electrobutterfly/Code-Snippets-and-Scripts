@@ -1,16 +1,16 @@
-# preprocess.js
-# @copyright     (c) 2025 Klaus Simon
-# @license       Custom Attribution-NonCommercial Sale License
-# @description   Part of the wpdb-geodatabase-processor Project
-# 
-# Permission is granted to use, modify, and distribute this script
-# for any purpose except commercial sale without explicit permission.
-# Attribution must be retained in all copies.
-# 
-# For commercial licensing: mini5propilot@gmail.com
-# Full license: LICENSE file in repository
-#####################################################################
-#####################################################################
+// preprocessor.js
+// @copyright     (c) 2025 Klaus Simon
+// @license       Custom Attribution-NonCommercial Sale License
+// @description   Part of the wpdb-geodatabase-processor Project
+// 
+// Permission is granted to use, modify, and distribute this script
+// for any purpose except commercial sale without explicit permission.
+// Attribution must be retained in all copies.
+// 
+// For commercial licensing: mini5propilot@gmail.com
+// Full license: LICENSE file in repository
+/////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
 
 
 import fs from 'fs';
@@ -21,19 +21,8 @@ import readline from 'readline';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const config = {
-    inputFiles: {
-        af: './data/raw/wdpa_af.geojson',
-        as: './data/raw/wdpa_as.geojson',  // 2.3GB - PROCESS SEPARATELY 
-        eu: './data/raw/wdpa_eu.geojson',  // 9GB - PROCESS SEPARATELY
-        na: './data/raw/wdpa_na.geojson',  // 2.6GB - PROCESS SEPARATELY
-        wa: './data/raw/wdpa_wa.geojson'
-    },
-    output: {
-        chunks: './data/chunks/',
-        featuresPerChunk: 50 // Smaller chunks for huge files
-    }
-};
+// Import configuration from config.js
+const config = (await import('./config.js', { assert: { type: 'json' } })).default;
 
 class MemorySafeProcessor {
     constructor() {
@@ -229,7 +218,7 @@ class MemorySafeProcessor {
         console.log('🚀 Processing SMALL regions first...\n');
         
         // Process only small files first
-        const smallRegions = ['wa', 'af']; // 9MB + 166MB
+        const smallRegions = ['wa', 'af', 'sa', 'na'];
         let totalFeatures = 0;
 
         for (const region of smallRegions) {
