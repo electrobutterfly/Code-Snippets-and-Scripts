@@ -26,8 +26,22 @@ module.exports = {
     // Output settings
     output: {
         chunks: './data/chunks/',
-        tiles: './data/tiles/',
-        maxChunkSize: 50000, // 50KB per chunk
         featuresPerChunk: 50 // Adjust based on feature complexity
     },
+
+    // Reporting settings
+    reporting: {
+        outputType: 'html', // 'console' or 'html'
+        htmlOutputFile: './processing-report.html',
+        serverPort: 8080,
+
+        colors: {
+            background: '#2b2b2b',
+            text: '#e0e0e0',
+            tableHeader: '#3c3c3c',
+            tableRow: '#363636',
+            tableRowAlt: '#404040',
+            accent: '#4c8ce0'
+        }
+    }
 };
