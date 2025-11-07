@@ -1,14 +1,12 @@
 # A Repository of various useful scripts , script-snippets and complete Software written in Javascript, and PHP
 
-## Process WPDB Geodatabase Files
+## [Process WPDB Geodatabase Files](./wpdb-geodatabase-processor)
 
-**
+The goal is to process and split the **huge geodatabase files in "geojson format"** which can be as big as 10GB each, or even much bigger, by computers with low memory (<= 8GB), without crashing the script running out of memory. It splits hem into smaller json chunks which then can be handled better for easy injection as layers into maps by web applications.
 
-[Process WPDB Geodatabase Files](./wpdb-geodatabase-processor)
+## [Simple CORS Proxy](./cors-proxy)
 
-The goal is to process and split the **huge geodatabase files** which can be as big as 10GB each,
-or even bigger, into smaller json chunks which can be handled better by smaller servers (<= 8GB)
-without crashing them, for easy injection as layers into maps. The project is set to use ES modules.
+This script sets up a **CORS Anywhere proxy server** that acts as an intermediary to bypass Cross-Origin Resource Sharing (CORS) restrictions in web browsers. CORS is a security mechanism that prevents web pages from making requests to domains different from their own, which can be problematic during development or when accessing APIs from client-side JavaScript.
 
 
 
@@ -28,10 +26,11 @@ and License file within the directory.
 **The main restriction:**
 - You cannot sell a product **whose primary purpose is to resell this software's functionality**.
 
-**For commercial sale licensing,** please contact: mini5propilot@gmail.com
+**For commercial sale licensing,** please contact: licensing@electrobutterfly.com
 
-*See the [LICENSE](LICENSE) file for full terms.*
+*See the [LICENSE](./LICENSE) file for full terms.*
 
 ## Project status
+
 Software, Code snippets or scripts might be added from time to time as my work progress goes on
 and I decide to make the code public for everyone to use.

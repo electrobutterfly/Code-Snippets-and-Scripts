@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////
-// simple-server.js
+// server.js
 // Copyright (c) 2025 Klaus Simon
 // https://github.com/electrobutterfly
 // github@electrobutterfly.com

@@ -7,7 +7,7 @@
 // for any purpose except commercial sale without explicit permission.
 // Attribution must be retained in all copies.
 // 
-// For commercial licensing: mini5propilot@gmail.com
+// For commercial licensing: licensing@electrobutterfly.com
 // Full license: LICENSE file in repository
 /////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////
@@ -79,7 +79,7 @@ class HTMLReporter {
         const colors = config.reporting.colors;
         const licenseText = `// @copyright (c) 2025 Klaus Simon
 // @license Custom Attribution-NonCommercial Sale License
-// For commercial licensing: mini5propilot@gmail.com`;
+// For commercial licensing: licensing@electrobutterfly.com`;
 
         const processingTime = this.reportData.endTime ? 
             ((this.reportData.endTime - this.reportData.startTime) / 1000).toFixed(1) + 's' : 

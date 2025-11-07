@@ -45,7 +45,7 @@ Place your GeoJSON files in data/raw/ with the exact names:
 wdpa_af.geojson
 wdpa_as.geojson
 wdpa_eu.geojson
-wdpa_na.geojson
+wdpa_na.geojsongit push github-remote
 wdpa_wa.geojson
 wdpa_sa.geojson
 
@@ -161,7 +161,7 @@ This project is licensed under the Custom Attribution-NonCommercial Sale License
 
 - You cannot sell a product **whose primary purpose is to resell this software's functionality**.
 
-**For commercial sale licensing,** please contact: mini5propilot@gmail.com
+**For commercial sale licensing,** please contact: licensing@electrobutterfly.com
 
 *See the [LICENSE](./LICENSE) file for full terms.*
 
@@ -171,4 +171,3 @@ This project is licensed under the Custom Attribution-NonCommercial Sale License
 
 Software, Code snippets or scripts might be added from time to time as my work progress goes on
 and I decide to make the code public.
-

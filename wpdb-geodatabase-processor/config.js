@@ -7,7 +7,7 @@
 // for any purpose except commercial sale without explicit permission.
 // Attribution must be retained in all copies.
 // 
-// For commercial licensing: mini5propilot@gmail.com
+// For commercial licensing: licensing@electrobutterfly.com
 // Full license: LICENSE file in repository
 /////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////
