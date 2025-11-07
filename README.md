@@ -14,6 +14,14 @@ This script sets up a **CORS Anywhere proxy server** that acts as an intermediar
 
 
 
+## [📁 Simple CORS Proxy v.2](./cors-proxy-2)
+
+CORS proxy server to provide cross-origin request handling with support for multiple HTTP methods.
+Easy to deploy with optional HTTPS support and no external dependencies. Efficient pipe-based streaming data transfer.
+Direct proxy with CORS headers only. Functionality gives you full control over your proxy infrastructure.
+
+
+
 
 
 ## Authors and acknowledgment
