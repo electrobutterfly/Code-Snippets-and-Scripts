@@ -1,4 +1,4 @@
-# Simple CORS Anywhere Proxy Server
+# Simple CORS Proxy Server
 
 ## Overview
 
