@@ -1,16 +1,11 @@
+/////////////////////////////////////////////////////////
 // file-inspector.js
-// @copyright     (c) 2025 Klaus Simon
-// @license       Custom Attribution-NonCommercial Sale License
-// @description   Part of the wpdb-geodatabase-processor Project
-// 
-// Permission is granted to use, modify, and distribute this script
-// for any purpose except commercial sale without explicit permission.
-// Attribution must be retained in all copies.
-// 
-// For commercial licensing: licensing@electrobutterfly.com
-// Full license: LICENSE file in repository
-/////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////
+// Copyright (c) 2025 Klaus Simon
+// https://github.com/electrobutterfly
+// github@electrobutterfly.com
+// This script is licensed under the MIT License.
+// Full license text: https://opensource.org/licenses/MIT
+/////////////////////////////////////////////////////////
 
 import fs from 'fs';
 import path from 'path';
@@ -74,8 +69,7 @@ class HTMLReporter {
     generateHTML() {
         const colors = this.config.reporting.colors;
         const licenseText = `// @copyright (c) 2025 Klaus Simon
-// @license Custom Attribution-NonCommercial Sale License
-// For commercial licensing: licensing@electrobutterfly.com`;
+// @MIT License`;
 
         const processingTime = this.reportData.endTime ? 
             ((this.reportData.endTime - this.reportData.startTime) / 1000).toFixed(1) + 's' : 
@@ -120,27 +114,6 @@ class HTMLReporter {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WPDB GeoDatabase Processor - File Inspection Report</title>
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-955THDBF7S"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-955THDBF7S', {
-        page_title: 'WPDB File Inspection Report',
-        page_location: window.location.href
-      });
-      
-      // Track custom event for report generation
-        gtag('event', 'report_viewed', {
-        'event_category': 'file_inspection',
-        'event_label': '${this.reportData.startTime.toLocaleString()}',
-     // 'regions_count': ${this.reportData.regions.length},
-     // 'total_features': ${this.reportData.totalFeatures},
-     // 'total_size_gb': ${this.reportData.totalSizeGB.toFixed(2)}
-      });
-    </script>
 
     <style>
         body {

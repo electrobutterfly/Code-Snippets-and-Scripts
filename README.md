@@ -22,6 +22,12 @@ Direct proxy with CORS headers only. Functionality gives you full control over y
 
 
 
+## [📁 Git Repository Synchronization Script](./repo-sync)
+
+A specialized Bash script designed to synchronize GitHub repositories when traditional Git operations fail due to repository corruption, file rewriting, or divergent histories. This tool uses intelligent cherry-picking to bypass merge conflicts and maintain synchronization between repositories with different commit hashes.
+
+
+
 
 
 ## Authors and acknowledgment
@@ -30,7 +36,7 @@ Direct proxy with CORS headers only. Functionality gives you full control over y
 
 ## License
 
-Projects are licensed under the Custom Attribution-NonCommercial Sale License unless otherwise stated that they are licensed under the MIT or any other License.
+Projects are licensed under the Custom Attribution-NonCommercial Sale License unless otherwise stated that any other License applies.
 
 **You are free to:**
 

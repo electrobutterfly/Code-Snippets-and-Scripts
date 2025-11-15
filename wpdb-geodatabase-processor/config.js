@@ -1,16 +1,11 @@
+/////////////////////////////////////////////////////////
 // config.js
-// @copyright     (c) 2025 Klaus Simon
-// @license       Custom Attribution-NonCommercial Sale License
-// @description   Part of the wpdb-geodatabase-processor Project
-// 
-// Permission is granted to use, modify, and distribute this script
-// for any purpose except commercial sale without explicit permission.
-// Attribution must be retained in all copies.
-// 
-// For commercial licensing: licensing@electrobutterfly.com
-// Full license: LICENSE file in repository
-/////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////
+// Copyright (c) 2025 Klaus Simon
+// https://github.com/electrobutterfly
+// github@electrobutterfly.com
+// This script is licensed under the MIT License.
+// Full license text: https://opensource.org/licenses/MIT
+/////////////////////////////////////////////////////////
 
 module.exports = {
     // Input files

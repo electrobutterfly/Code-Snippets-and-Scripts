@@ -1,16 +1,11 @@
+/////////////////////////////////////////////////////////
 // preprocessor.js
-// @copyright     (c) 2025 Klaus Simon
-// @license       Custom Attribution-NonCommercial Sale License
-// @description   Part of the wpdb-geodatabase-processor Project
-// 
-// Permission is granted to use, modify, and distribute this script
-// for any purpose except commercial sale without explicit permission.
-// Attribution must be retained in all copies.
-// 
-// For commercial licensing: licensing@electrobutterfly.com
-// Full license: LICENSE file in repository
-/////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////
+// Copyright (c) 2025 Klaus Simon
+// https://github.com/electrobutterfly
+// github@electrobutterfly.com
+// This script is licensed under the MIT License.
+// Full license text: https://opensource.org/licenses/MIT
+/////////////////////////////////////////////////////////
 
 import fs from 'fs';
 import path from 'path';
@@ -78,8 +73,7 @@ class HTMLReporter {
     generateHTML() {
         const colors = config.reporting.colors;
         const licenseText = `// @copyright (c) 2025 Klaus Simon
-// @license Custom Attribution-NonCommercial Sale License
-// For commercial licensing: licensing@electrobutterfly.com`;
+// @license MIT License`;
 
         const processingTime = this.reportData.endTime ? 
             ((this.reportData.endTime - this.reportData.startTime) / 1000).toFixed(1) + 's' : 
@@ -110,32 +104,6 @@ class HTMLReporter {
         return `<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WPDB GeoDatabase Processor - Processing Report</title>
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-955THDBF7S"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-955THDBF7S', {
-        page_title: 'WPDB Processing Report',
-        page_location: window.location.href
-      });
-      
-      // Track custom event for report generation
-      gtag('event', 'report_viewed', {
-        'event_category': 'data_processing',
-        'event_label': '${this.reportData.startTime.toLocaleString()}',
-     // 'regions_count': ${this.reportData.regions.length},
-     // 'total_features': ${this.reportData.totalFeatures},
-     // 'total_chunks': ${this.reportData.totalChunks},
-     // 'total_data_written_mb': ${this.reportData.totalWrittenMB.toFixed(1)}
-      });
-    </script>
-
     <style>
         body {
             background-color: ${colors.background};
