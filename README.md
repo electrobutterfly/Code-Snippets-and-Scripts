@@ -4,13 +4,13 @@
 
 ## [📁 Process WPDB Geodatabase Files](./wpdb-geodatabase-processor)
 
-The goal is to process and split the **huge geodatabase files in "geojson format"** which can be as big as 10GB each, or even much bigger, without crashing the script running out of memory. It splits hem into smaller json chunks which then can be handled better for easy injection as layers into maps by web applications.
+The goal is to process and split the **huge geodatabase files in "geojson format"** which can be as big as 10GB each, or even much bigger, without crashing the script running out of memory. It splits hem into smaller json chunks which then can be handled better for easy injection as layers into maps by web applications. Written for node.js
 
 
 
 ## [📁 Simple CORS Proxy](./cors-proxy-simple)
 
-This script sets up a **CORS Anywhere proxy server** that acts as an intermediary to bypass Cross-Origin Resource Sharing (CORS) restrictions in web browsers. CORS is a security mechanism that prevents web pages from making requests to domains different from their own, which can be problematic during development or when accessing APIs from client-side JavaScript.
+This script sets up a **CORS Anywhere proxy server** that acts as an intermediary to bypass Cross-Origin Resource Sharing (CORS) restrictions in web browsers. CORS is a security mechanism that prevents web pages from making requests to domains different from their own, which can be problematic during development or when accessing APIs from client-side JavaScript. Written for node.js
 
 
 
@@ -18,7 +18,7 @@ This script sets up a **CORS Anywhere proxy server** that acts as an intermediar
 
 CORS proxy server to provide cross-origin request handling with support for multiple HTTP methods.
 Easy to deploy with optional HTTPS support and no external dependencies. Efficient pipe-based streaming data transfer.
-Direct proxy with CORS headers only. Functionality gives you full control over your proxy infrastructure.
+Direct proxy with CORS headers only. Functionality gives you full control over your proxy infrastructure. Written for node.js
 
 
 
